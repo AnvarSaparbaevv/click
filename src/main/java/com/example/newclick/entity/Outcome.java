@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -23,11 +23,11 @@ public class Outcome {
     Card to_cord_id;
 
     @Column(nullable = false)
-    private long amount;
+    private double amount;
 
     @Column(nullable = false)
-    LocalDate data;
+    LocalDateTime data;
 
     @Column(nullable = false)
-    private long commision_amount;
+    private double commision_amount;
 }

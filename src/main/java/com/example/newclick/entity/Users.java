@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,5 +26,5 @@ public class Users {
     private String phoneNumber;
 
     @OneToMany
-    private Card cardIds;
+    private Set<Card> cardIds;
 }
