@@ -19,7 +19,7 @@ public class IncomeController {
     IncomeService service;
 
     @GetMapping("/{toCardId}")
-    public ResponseEntity<?> getIncome(@PathVariable String toCardId){
+    public ResponseEntity<?> getIncome(@PathVariable Integer toCardId){
         Set<Income> byIncome = service.getByIncome(toCardId);
         return ResponseEntity.status(HttpStatus.CREATED).body(byIncome);
     }

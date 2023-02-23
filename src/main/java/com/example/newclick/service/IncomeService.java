@@ -13,9 +13,9 @@ public class IncomeService {
     @Autowired
     IncomeRepository incomeRepository;
 
-    public Set<Income> getByIncome(String toCardId){
+    public Set<Income> getByIncome(Integer CardToId){
         Set<Income> set=new LinkedHashSet<>();
-        for (Income income : incomeRepository.getIncomeByTo_cord_id(toCardId)) {
+        for (Income income : incomeRepository.getIncomeByCardToId(CardToId)) {
             set.add(income);
         }
         return set;

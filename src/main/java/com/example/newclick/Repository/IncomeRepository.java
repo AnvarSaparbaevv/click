@@ -9,5 +9,5 @@ import java.util.Set;
 @RepositoryRestResource(path = "income")
 public interface IncomeRepository extends JpaRepository<Income,Integer> {
 
-    Set<Income> getIncomeByTo_cord_id(String to_card_id);
+    Set<Income> getIncomeByCardToId(Integer cardTo_id);
 }

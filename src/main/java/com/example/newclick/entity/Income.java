@@ -17,10 +17,10 @@ public class Income {
     private Integer id;
 
     @OneToOne
-    Card from_cord_id;
+    Card cardFrom;
 
     @OneToOne
-    Card to_cord_id;
+    Card cardTo;
 
     @Column(nullable = false)
     private double amount;
